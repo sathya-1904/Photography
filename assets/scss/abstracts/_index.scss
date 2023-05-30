@@ -1,0 +1,18 @@
+//color variables
+
+@forward "../abstracts/color";
+
+$primary-color: #000000;
+$secondary-color: #ed5e93;
+$third-color: #fff5f9;
+$fourth-color: #d3fbd8;
+$gradient-color: radial-gradient(
+  circle at 24.1% 68.8%,
+  rgb(50, 50, 50) 0%,
+  rgb(0, 0, 0) 99.4%
+);
+
+//font-url
+@forward "../base/font-url";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");

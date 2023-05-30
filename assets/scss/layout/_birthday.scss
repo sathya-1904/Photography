@@ -1,0 +1,61 @@
+@use "../abstracts/index" as *;
+
+/*Gallery-birth*/
+.gallery_birthday {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/assets/images/birthday/andrea-mininni-VLlkOJdzLG0-unsplash.jpg);
+  background-color: $primary-color;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 100px 200px;
+  img {
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &-text {
+    margin-left: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    // background-color: $third-color;
+    color: $third-color;
+
+    .gallery_birthday-title {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .gallery_birthday-para {
+      text-align: justify;
+    }
+  }
+
+  /* gallery birthday viewmore button*/
+  &-button {
+    margin-top: 40px;
+
+    .birthday_view-more {
+      border: none;
+      padding: 10px;
+      font-weight: 600;
+      color: $primary-color;
+      background-color: $third_color;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $third-color;
+        background-color: $primary_color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
+}

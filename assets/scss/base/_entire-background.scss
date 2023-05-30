@@ -1,0 +1,14 @@
+@use "../abstracts/index" as *;
+
+/*Entire Background Image*/
+
+.entire-background {
+  color: $third-color;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(/assets/images/main/types-of-photography_P1_900x515.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  // padding-bottom: 100px;
+}

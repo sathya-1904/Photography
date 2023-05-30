@@ -1,0 +1,39 @@
+//abstracts
+
+@use "./abstracts/color";
+@use "./abstracts/index";
+
+//base
+
+@use "./base/font-url";
+@use "./base/global-declaration";
+@use "../scss/base/entire-background";
+
+//layout
+
+@use "./layout/background";
+
+//navbar
+@use "./layout/navigation";
+@use "../scss/layout/contact-navbar";
+@use "./layout/gallery-navbar";
+@use "./layout/about-navbar";
+
+//header,footer,single layouts
+@use "./layout/media";
+@use "./layout/birthday";
+@use "./layout/travel";
+@use "./layout/wedding";
+@use "./layout/wild";
+@use "./layout/footer";
+
+//grid
+@use "./layout/birthday-grid";
+@use "./layout/travel-grid";
+@use "./layout/wedding-grid";
+@use "./layout/wild-grid";
+
+//pages
+@use "./pages/gallery";
+@use "./pages/about";
+@use "./pages/contact";

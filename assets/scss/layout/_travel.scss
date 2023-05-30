@@ -1,0 +1,70 @@
+@use "../abstracts/index" as *;
+
+/*Gallery-travel*/
+.gallery_travel {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/assets/images/travel/alif-ngoylung-jg-6ARMiaPM-unsplash.jpg);
+  background-color: $primary-color;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 100px 200px;
+  flex-direction: row-reverse;
+  background-color: $fourth-color;
+
+  img {
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &-text {
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 20px;
+
+    color: $third-color;
+    // color: $primary_color;
+    transition: 0.3s ease-in-out;
+
+    .gallery_travel-title {
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      text-align: right;
+    }
+    .gallery_travel-para {
+      text-align: justify;
+    }
+  }
+
+  /* gallery travel viewmore button*/
+  &-button {
+    margin-top: 40px;
+    text-align: right;
+
+    .travel_view-more {
+      border: none;
+      padding: 10px;
+      font-weight: 600;
+      color: $primary_color;
+      background-color: $third-color;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $third-color;
+        background-color: $primary-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
+}

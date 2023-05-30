@@ -1,0 +1,74 @@
+@use "../abstracts/index" as *;
+
+.form_background {
+  background-color: $third-color;
+  height: 100vh;
+  padding: 50px;
+
+  .form_foreground {
+    width: 500px;
+    margin: 0 auto;
+    background-color: $primary-color;
+    color: $third-color;
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    .form_title {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 40px 0;
+    }
+    .form_details {
+      padding: 40px;
+
+      #form_name {
+        text-transform: uppercase;
+
+        input {
+          background: none;
+          border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+          width: 420px;
+          color: $third-color;
+          padding: 10px;
+          border-radius: 10px;
+        }
+      }
+
+      #form_email {
+        text-transform: uppercase;
+        margin-top: 40px;
+
+        input {
+          background: none;
+          border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+          border-radius: 10px;
+          width: 420px;
+          color: $third-color;
+          padding: 10px;
+        }
+      }
+
+      #form_submit {
+        text-align: center;
+        padding: 50px 0;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-radius: 10px;
+          background: none;
+          color: $primary-color;
+          background-color: $third-color;
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            color: $third-color;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

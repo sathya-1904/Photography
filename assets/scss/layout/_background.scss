@@ -1,0 +1,69 @@
+@use "../abstracts/index" as *;
+
+/* Background*/
+.background {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url(../images/main/IMG_20220903_101743.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Background text*/
+  .text {
+    padding: 150px 0 0 80px;
+    margin: 10px;
+
+    &_main {
+      font-weight: 700;
+      font-size: 50px;
+      color: $third-color;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+    &_para {
+      width: 500px;
+      margin-top: 10px;
+      opacity: 0.5;
+      text-align: justify;
+      font-weight: 100;
+      color: $third-color;
+    }
+  }
+  /* Button Explore and signup*/
+  .explore {
+    margin-top: 20px;
+
+    &_button {
+      padding: 10px;
+      border: none;
+      border-radius: 15px;
+      transition: 0.3s ease-in-out;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $third-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+    .sign-up_button {
+      padding: 10px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 15px;
+      transition: 0.3s ease-in-out;
+      font-weight: 700;
+      background-color: $primary-color;
+      color: $third-color;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $third-color;
+        color: $primary-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
+}
